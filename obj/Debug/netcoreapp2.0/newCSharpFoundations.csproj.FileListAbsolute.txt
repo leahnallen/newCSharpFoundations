@@ -1,0 +1,10 @@
+C:\Projects_2017\newCSharpFoundations\bin\Debug\netcoreapp2.0\newCSharpFoundations.deps.json
+C:\Projects_2017\newCSharpFoundations\bin\Debug\netcoreapp2.0\newCSharpFoundations.runtimeconfig.json
+C:\Projects_2017\newCSharpFoundations\bin\Debug\netcoreapp2.0\newCSharpFoundations.runtimeconfig.dev.json
+C:\Projects_2017\newCSharpFoundations\bin\Debug\netcoreapp2.0\newCSharpFoundations.dll
+C:\Projects_2017\newCSharpFoundations\bin\Debug\netcoreapp2.0\newCSharpFoundations.pdb
+C:\Projects_2017\newCSharpFoundations\obj\Debug\netcoreapp2.0\newCSharpFoundations.csproj.CoreCompileInputs.cache
+C:\Projects_2017\newCSharpFoundations\obj\Debug\netcoreapp2.0\newCSharpFoundations.AssemblyInfoInputs.cache
+C:\Projects_2017\newCSharpFoundations\obj\Debug\netcoreapp2.0\newCSharpFoundations.AssemblyInfo.cs
+C:\Projects_2017\newCSharpFoundations\obj\Debug\netcoreapp2.0\newCSharpFoundations.dll
+C:\Projects_2017\newCSharpFoundations\obj\Debug\netcoreapp2.0\newCSharpFoundations.pdb
