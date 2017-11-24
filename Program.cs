@@ -7,24 +7,22 @@ Project:    newCSharpFoundations
 
 
 using System;
+using System.Text;
 
 namespace newCSharpFoundations
 {
     class Program
     {
         static void Main(string[] args)
-        {
-            Console.WriteLine("Please, enter a number between 5 and 20");
-            int input = int.Parse (Console.ReadLine());
+        {    
+             Console.WriteLine("Please, enter your name:");
+            string userName = Console.ReadLine();
+            StringBuilder newName = new StringBuilder(userName);
+            newName.Insert(0,"Hello ");
 
-            int i = 1;
-            while (i <= input)
-            {
-                string test = (i % 2 == 0) ? " is even." : " is odd.";
-                Console.WriteLine(i + test);     
-                i++;
-            }    
-
+            Console.WriteLine(newName.ToString());
+            Console.WriteLine("Please, press any key to close.");
+            Console.ReadKey();
 
         }
 
