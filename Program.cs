@@ -15,9 +15,18 @@ namespace newCSharpFoundations
     {
         static void Main(string[] args)
         {
-            string gameOfThronesPremier = "April 17, 2011";
-            DateTime gameOfThronesPremierDate = Convert.ToDateTime(gameOfThronesPremier);
-            Console.WriteLine(gameOfThronesPremierDate);
+            //string[] names = new string[] { "Sansa", "Bran", "Eddard", "Arya"};
+            string[] people = new string[4];
+            people[0] = "Sansa";
+            people[1] = "Bran";
+            people[2] = "Eddard";
+            people[3] = "Arya";
+
+        foreach(string person in people) {
+            Console.WriteLine(person);
         }
+        }
+
+
     }
 }
