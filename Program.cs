@@ -16,28 +16,25 @@ namespace newCSharpFoundations
     {
         static void Main(string[] args)
         {
-            int f, s, r;
-            Console.WriteLine("Please, enter First Number: ");
-            f = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Please, enter Second Number: ");
-            s = Convert.ToInt32(Console.ReadLine());
-            r = f * s;
-            Console.WriteLine("Answer:  " + r);
-            Console.ReadKey();
+            int pair1 = MultiplyTwoNumbers(2, 4);
+            MyMath mathInstance = new MyMath();
+            int pair2 = mathInstance.MultiplyTwoNumbers(16, 12);
+            int pair3 = (pair1 * pair2);
+            Console.WriteLine(pair3);
         }
-        class MyMath program.MultiplyTwoNumbers()
+        static int MultiplyTwoNumbers(int firstNumber, int secondNumber)
         {
-            int a, b, c;
-            Console.WriteLine("Please, enter First Number: ");
-            a = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Please, enter Second Number: ");
-            b = Convert.ToInt32(Console.ReadLine());
-            c = a * b;
-            Console.WriteLine("Answer:  " + r);
-            Console.ReadKey();
+            int prod = (firstNumber * secondNumber);
+            return prod;
         }
-
 
     }
-
+    class MyMath
+    {
+        public int MultiplyTwoNumbers(int firstNumber, int secondNumber)
+        {
+            int prod = (firstNumber * secondNumber);
+            return prod;
+        }
+    }
 }
