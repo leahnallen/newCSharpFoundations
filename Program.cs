@@ -1,6 +1,6 @@
 ﻿/************************************************
 Name:       Leah  
-Date:       11/22/2017
+Date:       11/28/2017
 Project:    newCSharpFoundations
 ************************************************
 */
@@ -11,22 +11,33 @@ using System.Text;
 
 namespace newCSharpFoundations
 {
+
     class Program
     {
         static void Main(string[] args)
         {
-            //string[] names = new string[] { "Sansa", "Bran", "Eddard", "Arya"};
-            string[] people = new string[4];
-            people[0] = "Sansa";
-            people[1] = "Bran";
-            people[2] = "Eddard";
-            people[3] = "Arya";
-
-        foreach(string person in people) {
-            Console.WriteLine(person);
+            int f, s, r;
+            Console.WriteLine("Please, enter First Number: ");
+            f = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Please, enter Second Number: ");
+            s = Convert.ToInt32(Console.ReadLine());
+            r = f * s;
+            Console.WriteLine("Answer:  " + r);
+            Console.ReadKey();
         }
+        class MyMath program.MultiplyTwoNumbers()
+        {
+            int a, b, c;
+            Console.WriteLine("Please, enter First Number: ");
+            a = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Please, enter Second Number: ");
+            b = Convert.ToInt32(Console.ReadLine());
+            c = a * b;
+            Console.WriteLine("Answer:  " + r);
+            Console.ReadKey();
         }
 
 
     }
+
 }
