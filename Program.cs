@@ -16,25 +16,35 @@ namespace newCSharpFoundations
     {
         static void Main(string[] args)
         {
-            int pair1 = MultiplyTwoNumbers(2, 4);
-            MyMath mathInstance = new MyMath();
-            int pair2 = mathInstance.MultiplyTwoNumbers(16, 12);
-            int pair3 = (pair1 * pair2);
-            Console.WriteLine(pair3);
-        }
-        static int MultiplyTwoNumbers(int firstNumber, int secondNumber)
-        {
-            int prod = (firstNumber * secondNumber);
-            return prod;
+            int? retValue = Parser.ParseInt("GOT");
+            if (retValue != null)
+            {
+                Console.WriteLine(retValue);
+            }
+            else
+            {
+                Console.WriteLine("Null returned");
+            }
         }
 
     }
-    class MyMath
+    class Parser
     {
-        public int MultiplyTwoNumbers(int firstNumber, int secondNumber)
+        public static int? ParseInt(string enterValue)
         {
-            int prod = (firstNumber * secondNumber);
-            return prod;
+            int parsedInt;
+            if (int.TryParse(enterValue, out parsedInt))
+            {
+                return parsedInt;
+            }
+            else
+            {
+                return null;
+            }
         }
+
     }
+
+
+
 }
