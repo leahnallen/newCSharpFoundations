@@ -7,6 +7,7 @@ Project:    newCSharpFoundations
 
 
 using System;
+using System.Collections.Generic;
 using System.Text;
 
 namespace newCSharpFoundations
@@ -16,35 +17,37 @@ namespace newCSharpFoundations
     {
         static void Main(string[] args)
         {
-            int? retValue = Parser.ParseInt("GOT");
-            if (retValue != null)
+            string[] GOTChars = { "Daenerys Targaryen", "Jon Snow", "Cersei Lannister", "Arya Stark", "Joffrey Baratheon", "Sansa Stark" };
+            StarkJumper sj = new StarkJumper();
+            string[] noStarks = sj.removeStarks(GOTChars);
+                    
+            foreach (string ch in noStarks)
             {
-                Console.WriteLine(retValue);
-            }
-            else
-            {
-                Console.WriteLine("Null returned");
+                System.Console.WriteLine(ch);
             }
         }
-
     }
-    class Parser
+
+    class StarkJumper
     {
-        public static int? ParseInt(string enterValue)
+        List<string> tempList = new List<string>();
+
+        public string[] removeStarks(string[] GOTChars)
         {
-            int parsedInt;
-            if (int.TryParse(enterValue, out parsedInt))
+            foreach (string ch in GOTChars)
             {
-                return parsedInt;
+                string lastName = ch.Substring(ch.Length -5);
+
+                if (lastName != "Stark")
+                {
+                    tempList.Add(ch);
+                }
+                
             }
-            else
-            {
-                return null;
-            }
+
+            string[] retArray = tempList.ToArray();
+
+            return retArray;
         }
-
     }
-
-
-
 }
